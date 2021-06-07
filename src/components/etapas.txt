@@ -1,0 +1,66 @@
+
+
+===========
+Usuario 
+===========
+id
+nome
+Email 
+etc
+
+
+Um usuario pode escrever muitos emails 
+mas um email so pode ser escrito por um usuario 
+
+
+
+Associations
+
+
+===========
+Email
+==========
+id
+assunto
+corpo
+origem
+destino
+usuarioId
+
+
+
+============================
+
+Modelos
+============================
+const { Sequelize, DataTypes } = require('sequelize');
+
+
+const Usuario = sequelize.define('Usuario', {
+
+  nome: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  : {
+    type: DataTypes.STRING,
+    allowNull:false,
+  }
+}, {
+  // Other model options go here
+});
+
+
+
+
+echo "# loja" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ellsonmendesyt/loja.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/ellsonmendesyt/loja.git
+git branch -M main
+git push -u origin main
